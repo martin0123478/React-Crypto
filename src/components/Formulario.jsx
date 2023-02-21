@@ -26,12 +26,13 @@ const Formulario = () => {
 
  
 
-  const[SelectMonedas] = useSelectMonedas('Elige tu moneda',monedas)
+  const[state,SelectMonedas] = useSelectMonedas('Elige tu moneda',monedas)
   
   SelectMonedas()
   return (
     <form>
       <SelectMonedas/>
+      {state}
      
                 <InputSubmit
          type="submit" 
